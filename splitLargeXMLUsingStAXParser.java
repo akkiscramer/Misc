@@ -28,6 +28,13 @@ import org.xml.sax.helpers.DefaultHandler;
 import org.apache.commons.lang.StringEscapeUtils;
 
 
+/*
+* Author: Akshith
+* Date: 12/20/2016
+* Desc: This code can be used to split huge XML files in to smaller XML files in SoftwareAG webMethods Integration server.
+*/
+
+
 IDataCursor pipelineCursor = pipeline.getCursor();
 		String	xmlFileAbsoluteName = IDataUtil.getString( pipelineCursor, "xmlFileAbsoluteName" );
 		String	rootNode = IDataUtil.getString( pipelineCursor, "rootNode" );
@@ -101,7 +108,7 @@ IDataCursor pipelineCursor = pipeline.getCursor();
 	
 	// --- <<IS-BEGIN-SHARED-SOURCE-AREA>> ---
 	
-	static String logFileName="..\\default\\logs\\applicationLogs\\DLI_LargeFileHandling.log";
+	static String logFileName="..\\default\\logs\\applicationLogs\\LargeFileHandling.log";
 	static String project="WHATEVER";
 	private static String NEWLINE = "\n";
 		
